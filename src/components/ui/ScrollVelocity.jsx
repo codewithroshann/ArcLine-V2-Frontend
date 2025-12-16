@@ -115,7 +115,7 @@ export const ScrollVelocity = ({
 
     return (
       <div
-        className={`${parallaxClassName} relative overflow-hidden`}
+        className={`${parallaxClassName} relative overflow-hidden selection:`}
         style={parallaxStyle}
       >
         <motion.div
@@ -132,7 +132,7 @@ export const ScrollVelocity = ({
   console.log(words);
 
   return (
-    <section className="mask-x-from-80% border-y border-neutral-600/30 py-4">
+    <section className="mask-x-from-80% border-y border-neutral-600/30 py-4 selection:bg-highlight-secondry selection:text-white">
       {texts.map((text, index) => (
         <VelocityText
           key={index}

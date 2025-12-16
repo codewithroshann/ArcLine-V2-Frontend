@@ -178,9 +178,9 @@ export const NavbarLogo = () => {
   return (
     <a
       href="#"
-      className="relative  z-20 mr-4 flex font-zalando font-semibold items-center space-x-2 px-2 py-1 text-lg  text-zinc-800"
+      className="relative text-shadow-sm  z-20 mr-4 flex font-zalando font-semibold items-center space-x-2 px-2 py-1 text-lg  text-zinc-800"
     >
-      RS
+      ArcLine <small className="text-highlight-secondry text-[8px] absolute top-[4px] right-[-10px]">Softs</small>
     </a>
   );
 };

@@ -4,10 +4,9 @@ import React from "react";
 const Hero_Section = () => {
   return (
     <>
-    <Container className=" px-4 selection:bg-highlight-secondry selection:text-white dark:selection:bg-highlight-primary">
-
+      <Container className=" px-6 selection:bg-highlight-secondry selection:text-white dark:selection:bg-highlight-primary">
         <div className=" mb-6 pt-22">
-          <span className=" font-semibold font-space">
+          <span className="text-sm font-semibold font-space">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -26,13 +25,13 @@ const Hero_Section = () => {
               <path d="M11 5.5v-2a1.5 1.5 0 1 1 3 0v8.5" />
               <path d="M14 5.5a1.5 1.5 0 0 1 3 0v6.5" />
             </svg>
-            Hey! Its me Roshan,
+            We design. We build. We scale.
           </span>
 
-          <h1 className=" md: text-5xl lg:text-6xl xl:text-7xl font-zalando md:w-[70%] font-medium mb-10 mt-8 text-shadow-sm">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl  lg:text-7xl font-zalando w-full sm:w-[85%] md:w-[80%] xl:w-[90%] font-medium mb-10 mt-4 text-shadow-sm">
             Turning{" "}
-            <span className="text-highlight-secondry">Full-Stack code</span>{" "}
-            into impactful user engagement.
+            <span className="text-highlight-secondry">ideas & businesses</span>{" "}
+            into powerful digital products.
           </h1>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 items-center my-12 ">
             <span className="h-[1px] w-full bg-zinc-500"></span>

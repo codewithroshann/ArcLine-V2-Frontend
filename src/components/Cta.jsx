@@ -11,9 +11,14 @@ const Cta = () => {
           </div>
           <p className="text-xs">Available For Work</p>
         </div>
-        <h1 className="font-zalando text-5xl w-150 text-center leading-14 py-5">
-          Let's <span className="text-highlight-secondry">create</span> your next big idea.
+        <h1 className="font-zalando text-shadow-md text-2xl xs:text-3xl sm:text-4xl   md:text-5xl text-center md:leading-14 py-5">
+          Let's <span className="text-highlight-secondry">create</span> your next <br />
+           big idea.
         </h1>
+        <div className="flex jusitfy-center">
+          <button className="text-highlight-secondry border text-sm md:text-md rounded-full hover:bg-highlight-secondry px-4 py-2 transition-all ease-in-out duration-150 hover:text-white shadow-md">Get In Touch</button>
+        
+        </div>
       </div>
     </Container>
   );

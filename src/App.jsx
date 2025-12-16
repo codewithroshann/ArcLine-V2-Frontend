@@ -1,15 +1,13 @@
-import React, { useEffect } from "react";
-import Navbar from "./components/Navbar";
-import Hero_Section from "./components/Hero-Section";
-import Tech_Marquee from "./components/Tech_Marquee";
-import About from "./components/About";
-import Footer from "./components/Footer";
+import { useEffect } from "react";
+
+import Navbar from "./includes/Navbar";
+import Footer from "./includes/Footer";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
-import Cta from "./components/Cta";
-import ScrollVelocity from "./components/ui/ScrollVelocity";
-import Projects from "./components/Projects";
+
+import Home from "./pages/Home";
 
 const App = () => {
   useEffect(() => {
@@ -37,15 +35,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Hero_Section />
-      <ScrollVelocity
-        texts={[" Develoment, Communty, Mentorship,"]}
-        className="custom-scroll-text text-neutral-600/20  font-space"
-      />
-      <About />
-      <Projects />
-      <Tech_Marquee />
-      <Cta />
+      <Home />
       <Footer />
     </>
   );
