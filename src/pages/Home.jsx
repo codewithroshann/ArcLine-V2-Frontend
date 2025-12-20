@@ -1,26 +1,57 @@
-import About from '@/components/About'
-import Cta from '@/components/Cta'
-import Hero_Section from '@/components/Hero-Section'
-import Projects from '@/components/Projects'
-import Tech_Marquee from '@/components/Tech_Marquee'
-import ScrollVelocity from '@/components/ui/ScrollVelocity'
+import React, { useRef } from "react";
+import { useScroll, useTransform } from "motion/react";
+import Hero_Section from "@/components/Hero-Section";
+import ScrollVelocity from "../components/ui/ScrollVelocity";
+import About from "../components/About";
+import Projects from "@/components/Projects";
+import Tech_Marquee from "@/components/Tech_Marquee";
+import Cta from "@/components/Cta";
+import Services from "@/components/Services";
+import { GoogleGeminiEffect } from "@/components/ui/GeminiScrollEffect";
+import FAQSection from "@/components/Faq";
 
+const Home = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
 
- const Home = () => {
+  const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1.2]);
+  const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.15, 1.2]);
+  const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1.2]);
+  const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1.2]);
+  const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
+
   return (
- <>
-       <Hero_Section />
+    <>
+      <Hero_Section />
       <ScrollVelocity
-        texts={["Develoment-Communty-Mentorship-"]}
-        className="custom-scroll-text text-neutral-600/20  font-space"
+        texts={[" Development - Communty - Mentorship - Leadership - "]}
+        className="custom-scroll-text text-neutral-600/20 font-space "
       />
-      <About />
+      <div
+        className=" my-4 w-full dark:border dark:border-white/[0.1] rounded-md relative  overflow-clip"
+        ref={ref}
+      >
+        <GoogleGeminiEffect
+          pathLengths={[
+            pathLengthFirst,
+            pathLengthSecond,
+            pathLengthThird,
+            pathLengthFourth,
+            pathLengthFifth,
+          ]}
+          
+        />
+      </div>
+      <Services />
       <Projects />
       <Tech_Marquee />
+      <FAQSection/>
       <Cta />
- 
- </>
-  )
-}
+    </>
+  );
+};
 
 export default Home;

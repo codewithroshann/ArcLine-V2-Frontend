@@ -16,7 +16,7 @@ const Cta = () => {
            big idea.
         </h1>
         <div className="flex jusitfy-center">
-          <button className="text-highlight-secondry border text-sm md:text-md rounded-full hover:bg-highlight-secondry px-4 py-2 transition-all ease-in-out duration-150 hover:text-white shadow-md">Get In Touch</button>
+          <button className="text-highlight-secondry text-shadow-sm border border-highlight-secondry text-sm md:text-md rounded-full hover:bg-highlight-secondry px-4 py-2 transition-all ease-in-out duration-150 hover:text-white shadow-md">Get In Touch</button>
         
         </div>
       </div>

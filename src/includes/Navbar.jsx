@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 import { IconMoon, IconSun } from "@tabler/icons-react";
-
+import { Skiper58, TextRoll } from "@/components/ui/SkiperNavigation";
 
 const NavbarMain = () => {
   const [theme, setTheme] = useState("dark");
@@ -35,26 +35,10 @@ const NavbarMain = () => {
       link: "#content",
     },
   ];
-
-  const menuItems = [
-    { label: "Home", ariaLabel: "Go to home page", link: "/" },
-    { label: "About", ariaLabel: "Learn about us", link: "/about" },
-    { label: "Services", ariaLabel: "View our services", link: "/services" },
-    { label: "Contact", ariaLabel: "Get in touch", link: "/contact" },
-  ];
-
-  const socialItems = [
-    { label: "Twitter", link: "https://twitter.com" },
-    { label: "GitHub", link: "https://github.com" },
-    { label: "LinkedIn", link: "https://linkedin.com" },
-  ];
-
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <>
-  
-<div className="sticky top-2 z-10 w-full selection:bg-highlight-secondry selection:text-white " >
+    <div className=" sticky top-2 z-50 w-full">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody className="backdrop:blur-md">
@@ -62,14 +46,11 @@ const NavbarMain = () => {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             <NavbarButton variant="secondary">
-              {theme==="dark"?(
-
+              {theme === "dark" ? (
                 <IconSun className="h-5 w-5 text-neutral-600" />
-              ):(
-                
+              ) : (
                 <IconMoon className="h-4 w-4 text-neutral-600" />
               )}
-
             </NavbarButton>
           </div>
         </NavBody>
@@ -90,26 +71,21 @@ const NavbarMain = () => {
           >
             {navItems.map((item, idx) => (
               <a
-                key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300"
+                className="relative text-neutral-600 dark:text-neutral-300 py-2 block"
               >
-                <span className="block">{item.name}</span>
+                <TextRoll className="text-4xl  font-bold">{item.name}</TextRoll>
               </a>
             ))}
-            <div className="flex w-full flex-col gap-4">
+            {/* 
+                <span className="block">{item.name}</span>
+             */}
+            <div className="flex w-full flex-col mt-3 gap-4">
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
-                className="w-full"
-              >
-                Login
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
+                className="w-full border border-highlight-secondry text-highlight-secondry"
               >
                 Book a call
               </NavbarButton>
@@ -118,8 +94,7 @@ const NavbarMain = () => {
         </MobileNav>
       </Navbar>
     </div>
-   
-    </>
   );
 };
 export default NavbarMain;
+

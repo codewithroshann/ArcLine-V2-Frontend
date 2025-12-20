@@ -12,7 +12,7 @@ const Footer = () => {
     <Container className=" px-4 md:px-0 selection:bg-highlight-secondry border-t  border-neutral-600/50 selection:text-white dark:selection:bg-highlight-primary">
       <div className="w-full flex justify-between items-center">
         <p className="text-xs text-zinc-800">
-          © {new Date().getFullYear()} Roshan Sahu. All Rights reserved.
+          © {new Date().getFullYear()} Arcline Softs. All Rights reserved.
         </p>
         <div className="flex gap-5  text-zinc-800">
           <a

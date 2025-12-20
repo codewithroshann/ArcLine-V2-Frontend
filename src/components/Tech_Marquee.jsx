@@ -1,4 +1,6 @@
 import React from "react";
+import Container from "./Container";
+import { IconNorthStar } from "@tabler/icons-react";
 
 const Tech_Marquee = () => {
   const skills = [
@@ -20,31 +22,71 @@ const Tech_Marquee = () => {
   ];
 
   return (
-    <div className="my-12 border-y border-neutral-600/40 w-full max-w-7xl mx-auto selection:bg-highlight-secondry selection:text-white dark:selection:bg-highlight-primary py-8 relative overflow-hidden mask-r-from-80% mask-l-from-80%">
-      <div className="flex whitespace-nowrap animate-marquee ">
-        {/* First set */}
-        {skills.map((skill, index) => (
-          <div
-            key={`first-${index}`}
-            className="bg-white px-6 w-max py-2 text-zinc-800 flex gap-2 rounded-full text-sm items-center justify-center mx-3"
-          >
-            <img src={skill.icon} alt={skill.name} className="h-5" />
-            {skill.name}
-          </div>
-        ))}
+    <>
+    <Container>
+      <div className="w-full">
+        <div className="text-center">
+          <span className="font-normal text-highlight-secondry uppercase font-zalando">
+            {" "}
+            <IconNorthStar className="inline mr-2" />
+            Tool Stacks
+          </span>
+        </div>
 
-        {/* Duplicate set for seamless loop */}
-        {skills.map((skill, index) => (
-          <div
-            key={`second-${index}`}
-            className="bg-white px-6 w-max py-2 text-zinc-800 flex gap-2 rounded-full text-sm items-center justify-center mx-3"
-          >
-            <img src={skill.icon} alt={skill.name} className="h-5" />
-            {skill.name}
+        <div className="mt-12 mb-2  border-y border-neutral-600/40 w-full selection:bg-highlight-secondry selection:text-white dark:selection:bg-highlight-primary py-8 relative overflow-hidden mask-r-from-80% mask-l-from-80%">
+          <div className="flex whitespace-nowrap animate-marquee-left ">
+            {/* First set */}
+            {skills.map((skill, index) => (
+              <div
+                key={`first-${index}`}
+                className="bg-white px-6 w-max py-2 text-zinc-800 flex gap-2 shadow-lg rounded-full text-sm items-center justify-center mx-3"
+              >
+                <img src={skill.icon} alt={skill.name} className="h-5" />
+                {skill.name}
+              </div>
+            ))}
+
+            {/* Duplicate set for seamless loop */}
+            {skills.map((skill, index) => (
+              <div
+                key={`second-${index}`}
+                className="bg-white px-6 w-max py-2 text-zinc-800 flex gap-2 shadow-lg rounded-full text-sm items-center justify-center mx-3"
+              >
+                <img src={skill.icon} alt={skill.name} className="h-5" />
+                {skill.name}
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+         
+        <div className="mb-12 border-y border-neutral-600/40 w-full selection:bg-highlight-secondry selection:text-white dark:selection:bg-highlight-primary py-8 relative overflow-hidden mask-r-from-80% mask-l-from-80%">
+          <div className="flex whitespace-nowrap animate-marquee-right ">
+            {/* First set */}
+            {skills.map((skill, index) => (
+              <div
+                key={`first-${index}`}
+                className="bg-white px-6 w-max py-2 text-zinc-800 flex gap-2 shadow-lg rounded-full text-sm items-center justify-center mx-3"
+              >
+                <img src={skill.icon} alt={skill.name} className="h-5" />
+                {skill.name}
+              </div>
+            ))}
+
+            {/* Duplicate set for seamless loop */}
+            {skills.map((skill, index) => (
+              <div
+                key={`second-${index}`}
+                className="bg-white px-6 w-max py-2 text-zinc-800 flex gap-2 shadow-lg rounded-full text-sm items-center justify-center mx-3"
+              >
+                <img src={skill.icon} alt={skill.name} className="h-5" />
+                {skill.name}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </Container>
+    </>
   );
 };
 
