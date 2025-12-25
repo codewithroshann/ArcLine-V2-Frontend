@@ -8,6 +8,20 @@ import GetStartedBtn from "@/components/ui/GetStartedBtn";
 import TextBottomBeam from "@/components/ui/TextBottomBeam";
 import { CircleCheckBig } from "lucide-react";
 
+
+export const metadata = {
+  title: "About Us | Arcline Software Solutions",
+  description:
+    "Learn about Arcline, a software development company delivering web, app, and digital solutions.",
+  keywords: [
+    "software company",
+    "web development",
+    "app development",
+    "IT services",
+  ],
+};
+
+
 export default function AboutPage() {
   const stats = [
     { value: "50+", label: "Projects Delivered" },

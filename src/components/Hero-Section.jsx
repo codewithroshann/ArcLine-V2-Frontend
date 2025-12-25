@@ -14,9 +14,9 @@ const Hero_Section = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="inline text-secondary mr-2 icon icon-tabler icons-tabler-outline icon-tabler-hand-three-fingers"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -54,9 +54,9 @@ const Hero_Section = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className=" rotate-270 inline  icon icon-tabler icons-tabler-outline icon-tabler-arrow-down-right"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -76,9 +76,9 @@ const Hero_Section = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className=" rotate-270 inline  icon icon-tabler icons-tabler-outline icon-tabler-arrow-down-right"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -98,9 +98,9 @@ const Hero_Section = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className=" rotate-270 inline  icon icon-tabler icons-tabler-outline icon-tabler-arrow-down-right"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -120,9 +120,9 @@ const Hero_Section = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className=" rotate-270 inline  icon icon-tabler icons-tabler-outline icon-tabler-arrow-down-right"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />

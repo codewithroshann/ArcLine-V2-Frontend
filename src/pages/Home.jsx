@@ -11,6 +11,19 @@ import { GoogleGeminiEffect } from "@/components/ui/GeminiScrollEffect";
 import FAQSection from "@/components/Faq";
 import WhyChooseUse from "@/components/WhyChooseUs";
 
+
+export const metadata = {
+  title: "About Us | Arcline Software Solutions",
+  description:
+    "Learn about Arcline, a software development company delivering web, app, and digital solutions.",
+  keywords: [
+    "software company",
+    "web development",
+    "app development",
+    "IT services",
+  ],
+};
+
 const Home = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
