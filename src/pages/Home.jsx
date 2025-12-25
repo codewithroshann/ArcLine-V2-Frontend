@@ -51,7 +51,11 @@ const Home = () => {
       <Projects />
       <Tech_Marquee />
       <FAQSection/>
-      <Cta />
+      <Cta >
+          Let's <span className="text-secondary">create</span> your next{" "}
+                    <br />
+                    big idea.
+      </Cta>
     </>
   );
 };

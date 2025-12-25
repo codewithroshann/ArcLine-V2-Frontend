@@ -132,7 +132,7 @@ export const ScrollVelocity = ({
   console.log(words);
 
   return (
-    <section className="max-w-7xl mx-auto mask-x-from-80% border-y border-neutral-600/30 py-4 selection:bg-highlight-secondry selection:text-white">
+    <section className="max-w-7xl mx-auto mask-x-from-80% border-y border-neutral-600/30 py-4 selection:bg-secondary selection:text-white">
       {texts.map((text, index) => (
         <VelocityText
           key={index}

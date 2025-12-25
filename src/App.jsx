@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./includes/Navbar";
 import Footer from "./includes/Footer";
 
@@ -8,6 +8,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
 
 import Home from "./pages/Home";
+import AboutPage from "./pages/About";
+import ServicesPage from "./pages/Services";
+import ProjectsPage from "./pages/Projects";
+import ContactUs from "./pages/ContactUs";
 
 const App = () => {
   useEffect(() => {
@@ -34,9 +38,17 @@ const App = () => {
 
   return (
     <>
-      <Navbar />
-      <Home />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/projects" element={<ProjectsPage/>} />
+          <Route path="/contact" element={<ContactUs/>} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 };

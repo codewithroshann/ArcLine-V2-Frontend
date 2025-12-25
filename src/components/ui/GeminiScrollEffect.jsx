@@ -18,11 +18,11 @@ export const GoogleGeminiEffect = ({
 }) => {
   return (
     <Container className="h-[200vh] pt-20 [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent),linear-gradient(to_bottom,black_90%,transparent)] [mask-composite:intersect]">
-      <div className={cn("sticky top-100 lg:top-30  ", className)}>
+      <div className={cn("sticky top-100 lg:top-40  ", className)}>
         <div className=" w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
           <h2 className="font-zalando text-4xl sm:text-5xl lg:text-7xl font-normal pb-4 text-center bg-clip-text text-black bg-gradient-to-b from-neutral-100 to-neutral-300">
             We Build{" "}
-            <span className="text-highlight-secondry">Experiences </span>{" "}
+            <span className="text-secondary">Experiences </span>{" "}
             <span className="block text-3xl lg:text-5xl">
               {" "}
               Not Just Products
@@ -31,10 +31,10 @@ export const GoogleGeminiEffect = ({
         </div>
         <div className="w-xl h-2 relative z-50 mx-auto">
           {/* Gradients */}
-          <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-highlight-secondry to-transparent h-[2px] w-3/4 blur-sm z-20" />
-          <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-highlight-secondry to-transparent h-px w-3/4 z-20" />
-          <div className="absolute inset-x-50 top-0 bg-gradient-to-r from-transparent via-highlight-secondry to-transparent h-[5px] w-1/4 blur-sm z-20" />
-          <div className="absolute inset-x-50 top-0 bg-gradient-to-r from-transparent via-highlight-secondry to-transparent h-px w-1/4 z-20" />
+          <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-secondary to-transparent h-[2px] w-3/4 blur-sm z-20" />
+          <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-secondary to-transparent h-px w-3/4 z-20" />
+          <div className="absolute inset-x-50 top-0 bg-gradient-to-r from-transparent via-secondary to-transparent h-[5px] w-1/4 blur-sm z-20" />
+          <div className="absolute inset-x-50 top-0 bg-gradient-to-r from-transparent via-secondary to-transparent h-px w-1/4 z-20" />
         </div>
 
         <p className="text-xs  md:text-xl font-normal text-center text-neutral-400 mt-4 max-w-lg mx-auto px-4">
@@ -42,7 +42,7 @@ export const GoogleGeminiEffect = ({
           clarity—crafted to grow with your users and scale with your vision.
         </p>
         <div className="w-full top-[9rem]  sm:top-[11rem]  flex items-center justify-center bg-red-transparent absolute ">
-          <button className=" duration-150 shadow-md hover:shadow-highlight-secondry/50 font-bold text-shadow-sm bg-white rounded-full md:px-4 md:py-2 px-2 py-1 md:mt-24 mt-10 z-30 md:text-base text-black text-xs  w-fit mx-auto border border-highlight-secondry/50  ">
+          <button className=" duration-150 shadow-md hover:shadow-secondary/50 font-bold text-shadow-sm bg-white rounded-full md:px-4 md:py-2 px-2 py-1 md:mt-24 mt-10 z-30 md:text-base text-black text-xs  w-fit mx-auto border border-secondary/50  ">
             ArcLine.com
           </button>
 

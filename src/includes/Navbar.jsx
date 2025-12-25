@@ -14,21 +14,26 @@ import { useState } from "react";
 import { IconMoon, IconSun } from "@tabler/icons-react";
 import { Skiper58, TextRoll } from "@/components/ui/SkiperNavigation";
 
+
 const NavbarMain = () => {
   const [theme, setTheme] = useState("dark");
 
   const navItems = [
     {
       name: "Home",
-      link: "#home",
+      link: "/",
     },
     {
       name: "About",
-      link: "#about",
+      link: "/about",
+    },
+    {
+      name: "Services",
+      link: "/services",
     },
     {
       name: "Projects",
-      link: "#projects",
+      link: "/projects",
     },
     {
       name: "Contact",
@@ -38,7 +43,7 @@ const NavbarMain = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className=" sticky top-2 z-50 w-full">
+    <div className=" sticky top-2 z-40 w-full">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody className="backdrop:blur-md">
@@ -85,7 +90,7 @@ const NavbarMain = () => {
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
-                className="w-full border border-highlight-secondry text-highlight-secondry"
+                className="w-full border border-secondary text-secondary"
               >
                 Book a call
               </NavbarButton>
@@ -97,4 +102,3 @@ const NavbarMain = () => {
   );
 };
 export default NavbarMain;
-

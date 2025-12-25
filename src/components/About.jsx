@@ -35,10 +35,10 @@ const About = () => {
   );
 
   return (
-     <Container className=" px-10 selection:bg-highlight-secondry selection:text-white dark:selection:bg-highlight-primary">
+     <Container className=" px-10 selection:bg-secondary selection:text-white dark:selection:bg-primary">
 
     <div className="my-16" ref={containerRef}>
-      <span className="text-center font-zalando uppercase text-highlight-secondry flex items-center justify-center">
+      <span className="text-center font-zalando uppercase text-secondary flex items-center justify-center">
         <IconNorthStar />
         About me
       </span>

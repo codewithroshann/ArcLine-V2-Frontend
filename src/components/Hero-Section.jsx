@@ -4,7 +4,7 @@ import React from "react";
 const Hero_Section = () => {
   return (
     <>
-      <Container className=" px-6 selection:bg-highlight-secondry selection:text-white dark:selection:bg-highlight-primary">
+      <Container className=" px-6 selection:bg-secondary selection:text-white dark:selection:bg-primary">
         <div className=" mb-6 pt-26 lg:pt-24">
           <span className="text-sm font-semibold font-space">
             <svg
@@ -17,7 +17,7 @@ const Hero_Section = () => {
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              className="inline text-highlight-secondry mr-2 icon icon-tabler icons-tabler-outline icon-tabler-hand-three-fingers"
+              className="inline text-secondary mr-2 icon icon-tabler icons-tabler-outline icon-tabler-hand-three-fingers"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
@@ -30,9 +30,9 @@ const Hero_Section = () => {
 
           <h1 className="text-6xl md:text-6xl  lg:text-7xl font-zalando w-full sm:w-[85%] md:w-[80%] xl:w-[80%] font-medium mb-10 mt-4 text-shadow-sm">
             Turning{" "}
-            <span className="text-highlight-secondry">idea's</span>{" "}
+            <span className="text-secondary">idea's</span>{" "}
             into
-            <span className="text-highlight-secondry"> digital</span>{" "}
+            <span className="text-secondary"> digital</span>{" "}
             products
           </h1>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 items-center my-12 ">
@@ -44,7 +44,7 @@ const Hero_Section = () => {
           <div className="my-6 space-x-4 uppercase text-sm">
             <a
               href=""
-              className="text-zinc-600 hover:text-highlight-secondry transition-all ease-in-out duration-150 "
+              className="text-zinc-600 hover:text-secondary transition-all ease-in-out duration-150 "
             >
               Linkedin
               <svg
@@ -66,7 +66,7 @@ const Hero_Section = () => {
             </a>
             <a
               href=""
-              className="text-zinc-600 hover:text-highlight-secondry transition-all ease-in-out duration-150"
+              className="text-zinc-600 hover:text-secondary transition-all ease-in-out duration-150"
             >
               Github
               <svg
@@ -88,7 +88,7 @@ const Hero_Section = () => {
             </a>
             <a
               href=""
-              className="text-zinc-600 hover:text-highlight-secondry transition-all ease-in-out duration-150"
+              className="text-zinc-600 hover:text-secondary transition-all ease-in-out duration-150"
             >
               Instragram
               <svg
@@ -110,7 +110,7 @@ const Hero_Section = () => {
             </a>
             <a
               href=""
-              className="text-zinc-600 hover:text-highlight-secondry transition-all ease-in-out duration-150"
+              className="text-zinc-600 hover:text-secondary transition-all ease-in-out duration-150"
             >
               Email
               <svg

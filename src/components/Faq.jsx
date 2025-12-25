@@ -62,7 +62,7 @@ export default function FAQSection() {
         {/* Left Column - Header */}
         <div className="w-full lg:flex-1 flex flex-col justify-center items-start gap-4 lg:py-5">
           <div className="w-full font-zalando flex flex-col justify-center  font-semibold leading-tight md:leading-[44px]  text-4xl tracking-tight">
-            <span className="text-highlight-secondry">Frequently  </span>Asked Questions
+            <span className="text-secondary">Frequently  </span>Asked Questions
           </div>
           <p className="w-full  text-base font-normal leading-7 ">
             Explore your data, build your dashboard,

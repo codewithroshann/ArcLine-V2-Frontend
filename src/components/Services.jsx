@@ -124,10 +124,10 @@ const services = [
   ];
   return (
     <>
-      <Container className="px-4 selection:bg-highlight-secondry selection:text-white dark:selection:bg-highlight-primary">
+      <Container className="px-4 selection:bg-secondary selection:text-white dark:selection:bg-primary">
         <div className="w-full">
           <div className="text-center">
-            <span className="font-normal text-highlight-secondry uppercase font-zalando">
+            <span className="font-normal text-secondary uppercase font-zalando">
               {" "}
               <IconNorthStar className="inline mr-2" />
               What We Serve
@@ -155,7 +155,7 @@ const Service = ({ title, description, icon, index }) => {
   return (
     <div
       className={cn(
-        "flex flex-col border-r border-highlight-secondry/30  py-10 relative group/feature dark:border-neutral-800 ",
+        "flex flex-col border-r border-secondary/30  py-10 relative group/feature dark:border-neutral-800 ",
         (index === 0 || index === 4) && "border-l dark:border-neutral-800",
         index < 4 && "border-b border-l lg:border-b dark:border-neutral-800",
 
@@ -172,7 +172,7 @@ index >= 4 && "border-t border-l lg:border-t-0 dark:border-neutral-800"
         {icon}
       </div>
       <div className="text-lg font-bold mb-2 relative z-10 px-10">
-        <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-highlight-secondry transition-all duration-200 origin-center" />
+        <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-secondary transition-all duration-200 origin-center" />
 
         <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100 font-zalando">
           {title}

@@ -1,23 +1,28 @@
 import React from "react";
 import Container from "./Container";
+import Silk from "./ui/Silk";
+import GetStartedBtn from "./ui/GetStartedBtn";
+import  Badge  from "./ui/badge";
 
-const Cta = () => {
+const Cta = ({ children, paragraph, badge = "Available For Work" }) => {
   return (
-    <Container className="px-4 selection:bg-highlight-secondry selection:text-white dark:selection:bg-highlight-primary">
-      <div className="shadow-lg w-fulll flex flex-col items-center justify-center rounded-lg bg-white py-10 px-4">
-        <div className="flex items-center gap-2 bg-[#30af5b]/10 rounded-full px-3 py-1 ">
-          <div className="relative h-[6px] w-[6px] flex rounded-full bg-green-800 ">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-600 opacity-75"></span>
-          </div>
-          <p className="text-xs">Available For Work</p>
-        </div>
-        <h1 className="font-zalando text-shadow-md text-2xl xs:text-3xl sm:text-4xl   md:text-5xl text-center md:leading-14 py-5">
-          Let's <span className="text-highlight-secondry">create</span> your next <br />
-           big idea.
-        </h1>
-        <div className="flex jusitfy-center">
-          <button className="text-highlight-secondry text-shadow-sm border border-highlight-secondry text-sm md:text-md rounded-full hover:bg-highlight-secondry px-4 py-2 transition-all ease-in-out duration-150 hover:text-white shadow-md">Get In Touch</button>
-        
+    <Container className="px-4 mb-6 ">
+      <div className="shadow-lg w-fulll  rounded-xl bg-white relative overflow-hidden">
+        <Silk
+          speed={2}
+          scale={1}
+          color="#43cf5dff"
+          noiseIntensity={1.5}
+          rotation={2}
+        />
+        <div className="flex flex-col items-center justify-center relative z-[5] py-10 px-4 text-background">
+          <Badge>{badge}</Badge>
+
+          <h2 className="font-zalando text-shadow-md text-2xl xs:text-3xl sm:text-4xl   md:text-5xl text-center md:leading-14 py-5">
+          {children}
+          </h2>
+
+          <GetStartedBtn />
         </div>
       </div>
     </Container>

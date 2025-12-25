@@ -5,15 +5,15 @@ import { CardBody, CardContainer, CardItem } from "./ui/Card";
 
 const Projects = () => {
   return (
-    <Container className="px-4 selection:bg-highlight-secondry selection:text-white dark:selection:bg-highlight-primary">
+    <Container className="px-4 selection:bg-secondary selection:text-white dark:selection:bg-primary">
       <div className="w-full">
         <div className="text-center">
-          <span className="font-normal text-highlight-secondry uppercase font-zalando">
+          <span className="font-normal text-secondary uppercase font-zalando">
             {" "}
             <IconNorthStar className="inline mr-2"/>
             Our Work{" "}
           </span>
-          <h1 className="text-4xl font-zalando">Featured Projects</h1>
+          <h2 className="text-4xl font-zalando">Featured Projects</h2>
             <p className="max-w-2xl mx-auto mt-2 text-muted-foreground md:text-lg">
            A showcase of our best work, demonstrating innovation, performance, and real business impact
               </p>

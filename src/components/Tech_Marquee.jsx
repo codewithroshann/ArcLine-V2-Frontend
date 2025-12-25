@@ -26,14 +26,14 @@ const Tech_Marquee = () => {
     <Container>
       <div className="w-full">
         <div className="text-center">
-          <span className="font-normal text-highlight-secondry uppercase font-zalando">
+          <span className="font-normal text-secondary uppercase font-zalando">
             {" "}
             <IconNorthStar className="inline mr-2" />
             Tool Stacks
           </span>
         </div>
 
-        <div className="mt-12 mb-2  border-y border-neutral-600/40 w-full selection:bg-highlight-secondry selection:text-white dark:selection:bg-highlight-primary py-8 relative overflow-hidden mask-r-from-80% mask-l-from-80%">
+        <div className="mt-12 mb-2  border-y border-neutral-600/40 w-full selection:bg-secondary selection:text-white dark:selection:bg-primary py-8 relative overflow-hidden mask-r-from-80% mask-l-from-80%">
           <div className="flex whitespace-nowrap animate-marquee-left ">
             {/* First set */}
             {skills.map((skill, index) => (
@@ -59,7 +59,7 @@ const Tech_Marquee = () => {
           </div>
         </div>
          
-        <div className=" border-y border-neutral-600/40 w-full selection:bg-highlight-secondry selection:text-white dark:selection:bg-highlight-primary py-8 relative overflow-hidden mask-r-from-80% mask-l-from-80%">
+        <div className=" border-y border-neutral-600/40 w-full selection:bg-secondary selection:text-white dark:selection:bg-primary py-8 relative overflow-hidden mask-r-from-80% mask-l-from-80%">
           <div className="flex whitespace-nowrap animate-marquee-right ">
             {/* First set */}
             {skills.map((skill, index) => (
