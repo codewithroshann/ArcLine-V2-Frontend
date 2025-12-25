@@ -18,12 +18,6 @@ const Badge = ({ children }) => {
           </button>
         </div>
 
-        {/* <div className="flex items-center justify-center gap-2 bg-[#30af5b]/10 rounded-full px-3 py-1 border border-secondary/50 ">
-          <div className="relative h-[6px] w-[6px] flex rounded-full bg-green-800 ">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-600 opacity-75"></span>
-          </div>
-          <p className="text-xs">{children}</p>
-        </div> */}
       </div>
     </>
   );
