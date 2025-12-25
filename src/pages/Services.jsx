@@ -16,7 +16,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import TextBottomBeam from "@/components/ui/TextBottomBeam";
-import GetStartedBtn from "@/components/ui/getStartedBtn";
+import GetStartedBtn from "@/components/ui/GetStartedBtn";
 import FAQSection from "@/components/Faq";
 
 export const metadata = {
