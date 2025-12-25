@@ -64,7 +64,7 @@ const Services = () => {
     },
   ];
 
-const services = [
+  const services = [
     {
       title: "Web Development",
       description:
@@ -124,7 +124,7 @@ const services = [
   ];
   return (
     <>
-      <Container className="px-4 selection:bg-secondary selection:text-white dark:selection:bg-primary">
+      <Container className="px-4 selection:bg-secondary selection:text-white dark:selection:bg-highlight-primary">
         <div className="w-full">
           <div className="text-center">
             <span className="font-normal text-secondary uppercase font-zalando">
@@ -134,8 +134,9 @@ const services = [
             </span>
             <h2 className="text-4xl font-zalando">Our Services</h2>
             <p className="max-w-2xl mx-auto mt-2 text-muted-foreground md:text-lg">
-        We provide end-to-end web, app, software, and digital solutions tailored to your business needs.
-              </p>
+              We provide end-to-end web, app, software, and digital solutions
+              tailored to your business needs.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-12  relative z-10  max-w-7xl mx-auto ">
@@ -159,7 +160,7 @@ const Service = ({ title, description, icon, index }) => {
         (index === 0 || index === 4) && "border-l dark:border-neutral-800",
         index < 4 && "border-b border-l lg:border-b dark:border-neutral-800",
 
-index >= 4 && "border-t border-l lg:border-t-0 dark:border-neutral-800"
+        index >= 4 && "border-t border-l lg:border-t-0 dark:border-neutral-800"
       )}
     >
       {index < 4 && (

@@ -6,7 +6,7 @@ import Badge from "./ui/Badge";
 const Cta = ({ children, paragraph, badge = "Available For Work" }) => {
   return (
     <Container className="px-4 mb-6 ">
-      <div className="shadow-lg w-fulll  rounded-xl bg-white relative overflow-hidden">
+      <div className="shadow-lg w-full  rounded-xl bg-white relative overflow-hidden">
         <Silk
           speed={2}
           scale={1}
