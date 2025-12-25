@@ -2,7 +2,7 @@ import React from "react";
 import Container from "./Container";
 import Silk from "./ui/Silk";
 import GetStartedBtn from "./ui/GetStartedBtn";
-import  Badge  from "./ui/badge";
+import  Badge  from "./ui/Badge";
 
 const Cta = ({ children, paragraph, badge = "Available For Work" }) => {
   return (
