@@ -10,6 +10,7 @@ import logoBlack from "@/assets/logo/logo-black.png";
 import logoWhite from "@/assets/logo/logo-white.png";
 import React, { useRef, useState } from "react";
 import { useTheme } from "@/provider/ThemeProvider";
+import { Link } from "react-router-dom";
 
 export const Navbar = ({ children, className }) => {
   const ref = useRef(null);
@@ -86,12 +87,12 @@ export const NavItems = ({ items, className, onItemClick }) => {
       )}
     >
       {items.map((item, idx) => (
-        <a
+        <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
           className="group relative px-4 py-2"
           key={`link-${idx}`}
-          href={item.link}
+          to={item.link}
         >
           {hovered === idx && (
             <motion.div
@@ -102,7 +103,7 @@ export const NavItems = ({ items, className, onItemClick }) => {
           <span className="group-hover:text-secondary dark:group-hover:text-primary relative z-20 text-neutral-700 duration-100 dark:text-neutral-300">
             {item.name}
           </span>
-        </a>
+        </Link>
       ))}
     </motion.div>
   );
@@ -205,7 +206,7 @@ export const NavbarButton = ({
   ...props
 }) => {
   const baseStyles =
-    "px-4 py-2 rounded-md bg-white button bg-white text-black text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
+    "px-4 py-2 rounded-md bg-white button bg-white text-black text-sm font-bold relative cursor-pointer  transition duration-200 inline-block text-center";
 
   const variantStyles = {
     primary:

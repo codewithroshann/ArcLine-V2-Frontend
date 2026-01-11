@@ -12,6 +12,7 @@ import AboutPage from "./pages/About";
 import ServicesPage from "./pages/Services";
 import ProjectsPage from "./pages/Projects";
 import ContactUs from "./pages/ContactUs";
+import PreLoader from "./components/ui/PreLoader";
 
 const App = () => {
   useEffect(() => {
@@ -39,6 +40,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
+      <PreLoader/>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

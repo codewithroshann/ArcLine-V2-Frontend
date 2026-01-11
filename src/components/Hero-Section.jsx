@@ -33,17 +33,22 @@ const Hero_Section = () => {
           </span>
 
           <h1 className="font-zalando mt-6 mb-8 max-w-4xl text-center text-4xl font-semibold tracking-tight md:text-6xl lg:text-start">
-            Turning <span className="text-secondary dark:text-primary">idea&apos;s</span> into{" "}
-            <span className="text-secondary dark:text-primary">digital</span> products
+            Turning{" "}
+            <span className="text-secondary dark:text-primary">
+              Idea&apos;s
+            </span>{" "}
+            Into{" "}
+            <span className="text-secondary dark:text-primary">Digital</span>{" "}
+            Products
           </h1>
 
-          <Subheading className="mx-auto mb-6 flex max-w-xl text-center  text-zinc-700 dark:text-neutral-300 lg:text-start">
+          <Subheading className="mx-auto mb-6 flex max-w-xl text-center text-zinc-700 lg:text-start dark:text-neutral-300">
             We build end-to-end digital solutions—from strategy and development
             to scalable, user-focused experiences that drive real business
             growth.
           </Subheading>
           <div className="mt-6 flex justify-center lg:justify-start">
-            <GetStartedBtn />
+            <GetStartedBtn darkShadow={true} />
           </div>
         </div>
 

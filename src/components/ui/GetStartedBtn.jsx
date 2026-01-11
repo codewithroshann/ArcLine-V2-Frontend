@@ -1,13 +1,19 @@
+import { cn } from "@/lib/utils";
 import React from "react";
 
-const GetStartedBtn = () => {
+const GetStartedBtn = ({ title = "Get started", darkShadow = false }) => {
   return (
     <>
       <div className="flex items-center justify-center">
         <a href="/contact">
-          <div className="group cursor-pointer border border-border bg-card gap-2 h-[60px] flex items-center p-[10px] rounded-full border-secondary shadow-md">
-            <div className="border border-border bg-secondary  text-white h-[40px] rounded-full flex items-center justify-center shadow-sm ">
-              <p className="font-medium tracking-tight mr-3 ml-3 flex items-center gap-2 justify-center text-white">
+          <div
+            className={cn(
+              "group bg-card border-secondary dark:border-primary flex h-[60px] cursor-pointer items-center gap-2 rounded-full border p-[10px] shadow-md",
+              darkShadow && "dark:shadow-primary dark:shadow-2xl",
+            )}
+          >
+            <div className="dark:bg-primary border-border bg-secondary flex h-[40px] items-center justify-center rounded-full border text-white shadow-sm">
+              <p className="mr-3 ml-3 flex items-center justify-center gap-2 font-medium tracking-tight text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -18,16 +24,16 @@ const GetStartedBtn = () => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="lucide lucide-globe animate-spin"
+                  className="lucide lucide-globe animate-spin dark:stroke-black"
                 >
                   <circle cx="12" cy="12" r="10"></circle>
                   <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                   <path d="M2 12h20"></path>
                 </svg>
-                <span className="text-white">Get started</span>
+                <span className="text-white dark:text-black">{title}</span>
               </p>
             </div>
-            <div className="text-muted-foreground group-hover:ml-4 ease-in-out transition-all size-[24px] flex items-center justify-center rounded-full border-2 border-border">
+            <div className="text-muted-foreground border-border flex size-[24px] items-center justify-center rounded-full border-2 transition-all ease-in-out group-hover:ml-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="14"
@@ -38,7 +44,7 @@ const GetStartedBtn = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-arrow-right group-hover:rotate-180 ease-in-out transition-all"
+                className="lucide lucide-arrow-right transition-all ease-in-out group-hover:rotate-180"
               >
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>

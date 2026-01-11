@@ -10,14 +10,28 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { IconMoon, IconSun } from "@tabler/icons-react";
 import { Skiper58, TextRoll } from "@/components/ui/SkiperNavigation";
-import ToggleTheme from "@/components/ToggleTheme.jsx"
-
+import ToggleTheme from "@/components/ToggleTheme.jsx";
+import BorderBeam from "@/components/ui/NavBeam";
+import { useMotionValueEvent, useScroll } from "motion/react";
 
 const NavbarMain = () => {
+  const ref = useRef(null);
+  const { scrollY } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+  const [visible, setVisible] = useState(false);
 
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    if (latest > 50) {
+      setVisible(true);
+    } else {
+      setVisible(false);
+    }
+  });
 
   const navItems = [
     {
@@ -44,15 +58,25 @@ const NavbarMain = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className=" sticky top-2 z-40 w-full">
+    <div className="sticky top-2 z-40 w-full" ref={ref}>
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody className="backdrop:blur-md">
+          {visible && (
+            <BorderBeam
+              colorFrom="#7400ff"
+              colorTo="#9b41ff"
+              size={50}
+              duration={6}
+              borderThickness={2}
+              glowIntensity={5}
+            />
+          )}
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             <NavbarButton variant="secondary">
-      <ToggleTheme/>
+              <ToggleTheme />
             </NavbarButton>
           </div>
         </NavBody>
@@ -75,19 +99,19 @@ const NavbarMain = () => {
               <a
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300 py-2 block"
+                className="relative block py-2 text-neutral-600 dark:text-neutral-300"
               >
-                <TextRoll className="text-4xl  font-bold">{item.name}</TextRoll>
+                <TextRoll className="text-4xl font-bold">{item.name}</TextRoll>
               </a>
             ))}
             {/* 
                 <span className="block">{item.name}</span>
              */}
-            <div className="flex w-full flex-col mt-3 gap-4">
+            <div className="mt-3 flex w-full flex-col gap-4">
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
-                className="w-full border border-secondary text-secondary"
+                className="border-secondary text-secondary w-full border"
               >
                 Book a call
               </NavbarButton>
