@@ -12,7 +12,7 @@ const ToggleTheme = () => {
       aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
     >
       {isDarkMode ? (
-        <Sun className="hover:text-primary h-5 w-5 text-neutral-300" />
+        <Sun className="hover:text-secondary h-5 w-5 text-neutral-300" />
       ) : (
         <Moon className="hover:text-secondary h-5 w-5 text-neutral-700" />
       )}

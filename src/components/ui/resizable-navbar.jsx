@@ -100,7 +100,7 @@ export const NavItems = ({ items, className, onItemClick }) => {
               className="absolute inset-0 h-full w-full rounded-full border bg-gray-100 dark:bg-neutral-800"
             />
           )}
-          <span className="group-hover:text-secondary  relative z-20 text-neutral-700 duration-100 dark:text-neutral-300">
+          <span className="group-hover:text-secondary dark:group-hover:text-secondary  relative z-20 text-neutral-700 duration-100 dark:text-neutral-300">
             {item.name}
           </span>
         </Link>
