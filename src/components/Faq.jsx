@@ -78,7 +78,7 @@ export default function FAQSection() {
               const isOpen = openItems.includes(index)
 
               return (
-                <div key={index} className="w-full border-b border-[rgba(73,66,61,0.16)] overflow-hidden">
+                <div key={index} className="w-full border-b border-[rgba(73,66,61,0.16)] dark:border-neutral-600/50 overflow-hidden">
                   <button
                     onClick={() => toggleItem(index)}
                     className="w-full px-5 py-[18px] flex justify-between items-center gap-5 text-left hover:bg-[rgba(73,66,61,0.02)] transition-colors duration-200"
@@ -101,7 +101,7 @@ export default function FAQSection() {
                       isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                     }`}
                   >
-                    <div className="px-5 pb-[18px] text-neutral-600  text-sm font-normal leading-6 ">
+                    <div className="px-5 pb-[18px] text-neutral-600 dark:text-neutral-400 text-sm font-normal leading-6 ">
                       {item.answer}
                     </div>
                   </div>
