@@ -8,11 +8,11 @@ const GetStartedBtn = ({ title = "Get started", darkShadow = false }) => {
         <a href="/contact">
           <div
             className={cn(
-              "group bg-card border-secondary dark:border-primary flex h-[60px] cursor-pointer items-center gap-2 rounded-full border p-[10px] shadow-md",
-              darkShadow && "dark:shadow-primary dark:shadow-2xl",
+              "group bg-card border-secondary flex h-[60px] cursor-pointer items-center gap-2 rounded-full border p-[10px] shadow-2xl",
+              darkShadow && "dark:shadow-secondary dark:shadow-2xl",
             )}
           >
-            <div className="dark:bg-primary border-border bg-secondary flex h-[40px] items-center justify-center rounded-full border text-white shadow-sm">
+            <div className="border-border bg-secondary flex h-[40px] items-center justify-center rounded-full border text-white shadow-sm">
               <p className="mr-3 ml-3 flex items-center justify-center gap-2 font-medium tracking-tight text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -24,13 +24,13 @@ const GetStartedBtn = ({ title = "Get started", darkShadow = false }) => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="lucide lucide-globe animate-spin dark:stroke-black"
+                  className="lucide lucide-globe animate-spin "
                 >
                   <circle cx="12" cy="12" r="10"></circle>
                   <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                   <path d="M2 12h20"></path>
                 </svg>
-                <span className="text-white dark:text-black">{title}</span>
+                <span className="text-white ">{title}</span>
               </p>
             </div>
             <div className="text-muted-foreground border-border flex size-[24px] items-center justify-center rounded-full border-2 transition-all ease-in-out group-hover:ml-4">

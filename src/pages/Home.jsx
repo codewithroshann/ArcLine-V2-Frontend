@@ -11,7 +11,6 @@ import { GoogleGeminiEffect } from "@/components/ui/GeminiScrollEffect";
 import FAQSection from "@/components/Faq";
 import WhyChooseUse from "@/components/WhyChooseUs";
 
-
 export const metadata = {
   title: "About Us | Arcline Software Solutions",
   description:
@@ -42,10 +41,10 @@ const Home = () => {
       <Hero_Section />
       <ScrollVelocity
         texts={[" Development - Communty - Mentorship - Leadership - "]}
-        className="custom-scroll-text text-neutral-600/20 font-space "
+        className="custom-scroll-text font-space text-neutral-600/20"
       />
       <div
-        className=" my-4 w-full dark:border dark:border-white/[0.1] rounded-md relative  overflow-clip"
+        className="relative my-4 w-full overflow-clip rounded-md dark:border dark:border-white/[0.1]"
         ref={ref}
       >
         <GoogleGeminiEffect
@@ -56,18 +55,16 @@ const Home = () => {
             pathLengthFourth,
             pathLengthFifth,
           ]}
-          
         />
       </div>
       <Services />
-      <WhyChooseUse/>
+      <WhyChooseUse />
       <Projects />
       <Tech_Marquee />
-      <FAQSection/>
-      <Cta >
-          Let's <span className="text-secondary">create</span> your next{" "}
-                    <br />
-                    big idea.
+      <FAQSection />
+      <Cta>
+        Let's create your next <br />
+        big idea.
       </Cta>
     </>
   );

@@ -38,7 +38,7 @@ export default function AboutPage() {
 
           <section className="mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-4xl text-center">
-              <Badge className="mb-3">About ArcLine</Badge>
+              <Badge className="mb-3" text="text-black dark:text-white">About ArcLine</Badge>
 
               <h1 className="font-zalando mt-3 mb-2 text-4xl font-semibold tracking-tight text-balance text-shadow-sm md:text-5xl lg:text-7xl">
                 Building the <span className="text-secondary">Future</span> of
@@ -184,7 +184,7 @@ export default function AboutPage() {
           {/* CTA Section */}
 
           <Cta paragraph="Ready to transform your vision into reality? Our team is here to help you navigate every step of your digital journey.">
-            Let&apos;s Build Something{" "}
+            Let&apos;s Build Something <br />
             <span className="text-secondary">Exceptional</span> Together
           </Cta>
         </main>

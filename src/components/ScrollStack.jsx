@@ -1,3 +1,5 @@
+"use client";
+
 import { motion, useScroll, useTransform } from "motion/react";
 import ReactLenis from "lenis/react";
 import React, { useRef } from "react";
@@ -11,6 +13,7 @@ import {
 } from "lucide-react";
 import { IconNorthStar } from "@tabler/icons-react";
 import Container from "@/components/Container";
+
 
 const steps = [
   {
@@ -1030,6 +1033,7 @@ const illustrations = {
   ),
 };
 
+
 const StickyCard = ({
   step,
   title,
@@ -1047,40 +1051,40 @@ const StickyCard = ({
   return (
     <div
       ref={container}
-      className="sticky top-0 mx-auto flex w-full max-w-5xl items-center justify-center px-8"
+      className="sticky top-0 flex items-center justify-center w-full max-w-5xl mx-auto px-8"
     >
       <motion.div
         style={{
           scale,
           top: `calc(-5vh + ${i * 20 + 150}px)`,
         }}
-        className="relative w-full origin-top"
+        className="relative origin-top w-full"
       >
-        <div className="bg-card dark:bg-background overflow-hidden rounded-xl border border-gray-200 shadow-sm transition-all duration-500 hover:shadow-md dark:border-neutral-600">
-          <div className="grid gap-0 md:grid-cols-2">
+        <div className="bg-card dark:bg-background rounded-xl border border-gray-200 dark:border-neutral-600  overflow-hidden transition-all duration-500 shadow-sm hover:shadow-md">
+          <div className="grid md:grid-cols-2 gap-0">
             {/* TEXT */}
-            <div className="flex h-78 flex-col justify-center p-12">
-              <div className="mb-4 flex items-center gap-3">
-                <span className="text-secondary inline-flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-gray-100 text-sm font-semibold">
+            <div className="p-12 flex flex-col justify-center h-78">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 text-secondary font-semibold text-sm border border-gray-200">
                   {step}
                 </span>
 
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-gray-100 text-gray-600">
-                  <Icon className="h-5 w-5" strokeWidth={1.5} />
+                <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gray-100 text-gray-600 border border-gray-200">
+                  <Icon className="w-5 h-5" strokeWidth={1.5} />
                 </div>
               </div>
 
-              <h3 className="font-zalando text-forground mb-3 text-xl font-semibold">
+              <h3 className="text-xl font-zalando font-semibold mb-3 text-forground">
                 {title}
               </h3>
 
-              <p className="text-sm leading-relaxed text-gray-600">
+              <p className="text-gray-600 leading-relaxed text-sm">
                 {description}
               </p>
             </div>
 
             {/* ILLUSTRATION */}
-            <div className="flex h-64 items-center justify-center border-t border-green-600 bg-[radial-gradient(var(--color-neutral-400)_1px,transparent_1px)] mask-radial-from-10% [background-size:10px_10px] md:h-auto md:border-t-0 md:border-l dark:bg-[radial-gradient(var(--color-neutral-200)_1px,transparent_1px)]">
+            <div className=" h-64 md:h-auto bg-[radial-gradient(var(--color-neutral-200)_1px,transparent_1px)]   mask-radial-from-10% [background-size:10px_10px] flex items-center justify-center border-t md:border-t-0 md:border-l border-green-600">
               {illustrations[step]}
             </div>
           </div>
@@ -1090,7 +1094,7 @@ const StickyCard = ({
   );
 };
 
-const WhyChooseUs = () => {
+const ScrollStack = () => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -1101,7 +1105,7 @@ const WhyChooseUs = () => {
     <>
       <main
         ref={container}
-        className="relative flex w-full flex-col items-center justify-center pt-[5vh] pb-[50vh]"
+        className="relative flex w-full flex-col items-center justify-center pb-[50vh] pt-[5vh] "
       >
         <Container>
           <motion.div
@@ -1109,17 +1113,17 @@ const WhyChooseUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="mt-8 flex flex-col items-center justify-center space-y-4 text-center"
+            className="flex flex-col items-center justify-center space-y-4 text-center mt-8"
           >
-            <span className="text-secondary font-zalando font-normal uppercase">
+            <span className="font-normal text-secondary uppercase font-zalando">
               {" "}
-              <IconNorthStar className="mr-2 inline" />
+              <IconNorthStar className="inline mr-2" />
               Our Approach
             </span>
-            <h2 className="font-zalando text-3xl tracking-tight md:text-4xl">
+            <h2 className="text-3xl md:text-4xl font-zalando tracking-tight">
               How We Deliver <span className="text-secondary">Results</span>
             </h2>
-            <p className="text-muted-foreground max-w-2xl md:text-lg">
+            <p className="max-w-2xl text-muted-foreground md:text-lg">
               We build scalable digital solutions through a clear,
               results-driven process focused on performance and growth.
             </p>
@@ -1147,4 +1151,4 @@ const WhyChooseUs = () => {
   );
 };
 
-export default WhyChooseUs;
+export { ScrollStack, StickyCard };

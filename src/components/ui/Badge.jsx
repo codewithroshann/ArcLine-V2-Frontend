@@ -1,6 +1,7 @@
+import { cn } from "@/lib/utils";
 import React from "react";
 
-const Badge = ({ children }) => {
+const Badge = ({ children,text }) => {
   return (
     <>
       <div className=" mx-auto">
@@ -14,7 +15,7 @@ const Badge = ({ children }) => {
             <div className="relative h-[6px] w-[6px] flex rounded-full bg-green-600 ">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-600 opacity-75"></span>
             </div>
-            <span className="relative ">{children}</span>
+            <span className={cn("relative ",text)}>{children}</span>
           </button>
         </div>
 

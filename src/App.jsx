@@ -13,6 +13,7 @@ import ServicesPage from "./pages/Services";
 import ProjectsPage from "./pages/Projects";
 import ContactUs from "./pages/ContactUs";
 import PreLoader from "./components/ui/PreLoader";
+import ScrollTop from "./components/ui/ScrollTop";
 
 const App = () => {
   useEffect(() => {
@@ -41,6 +42,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <PreLoader />
+        <ScrollTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
