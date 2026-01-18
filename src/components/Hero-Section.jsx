@@ -61,9 +61,7 @@ const Hero_Section = () => {
           </div>
         </div>
 
-        <div className="">
-          <Spline3D />
-        </div>
+
       </Container>
     </section>
   );

@@ -28,12 +28,12 @@ export const GoogleGeminiEffect = ({
       gsap.fromTo(
         sections,
         {
-          y: 50,
+      
           opacity: 0,
           scale: 0.7,
         },
         {
-          y: 0,
+     
           opacity: 1,
           scale: 1,
           ease: "power",

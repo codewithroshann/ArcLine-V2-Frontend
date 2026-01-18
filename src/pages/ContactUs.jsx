@@ -242,7 +242,7 @@ export default function ContactUs() {
                         <a
                           key={index}
                           href={item.link}
-                          className="border-border/50 hover:border-secondary/50 bg-background group flex items-start gap-4 rounded-lg border p-4 transition-all"
+                          className="border-border/50 hover:border-secondary/50 bg-card group flex items-start gap-4 rounded-lg border p-4 transition-all"
                         >
                           <div className="bg-secondary/10 group-hover:bg-secondary/20 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full transition-colors">
                             <item.icon className="text-secondary h-5 w-5" />

@@ -1056,7 +1056,7 @@ const StickyCard = ({
         }}
         className="relative w-full origin-top"
       >
-        <div className="bg-card dark:bg-background overflow-hidden rounded-xl border border-gray-200 shadow-sm transition-all duration-500 hover:shadow-md dark:border-neutral-600">
+        <div className="bg-card overflow-hidden rounded-xl border border-gray-200 shadow-sm transition-all duration-500 hover:shadow-md dark:border-neutral-600">
           <div className="grid gap-0 md:grid-cols-2">
             {/* TEXT */}
             <div className="flex h-78 flex-col justify-center p-12">

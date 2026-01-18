@@ -42,8 +42,8 @@ const PreLoader = ({ onLoadingComplete }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
           className={cn(
-            "h-screen w-full bg-secondary fixed z-[100] inset-0 overflow-hidden",
-            visibility && "p-5"
+            "bg-secondary fixed inset-0 z-[100] max-h-screen w-full overflow-hidden",
+            visibility && "p-5",
           )}
         >
           {/* Animated background container */}
@@ -62,7 +62,7 @@ const PreLoader = ({ onLoadingComplete }) => {
               ease: [0.43, 0.13, 0.23, 0.96],
             }}
             className={cn(
-              "bg-white w-full h-full rounded-lg flex flex-col items-center justify-center gap-8 p-5 md:p-10 "
+              "flex h-full w-full flex-col items-center justify-center gap-8 rounded-lg bg-white p-5 md:p-10",
             )}
           >
             {/* Logo with stagger animation */}
@@ -87,7 +87,7 @@ const PreLoader = ({ onLoadingComplete }) => {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="absolute inset-0 blur-xl bg-secondary/20 rounded-full"
+                className="bg-secondary/20 absolute inset-0 rounded-full blur-xl"
               />
               <img
                 src={Logo}
@@ -109,7 +109,7 @@ const PreLoader = ({ onLoadingComplete }) => {
               className="w-full max-w-xs space-y-3"
             >
               {/* Progress bar */}
-              <div className="relative h-2 bg-gray-100 rounded-full overflow-hidden shadow-inner">
+              <div className="relative h-2 overflow-hidden rounded-full bg-gray-100 shadow-inner">
                 {/* Shimmer effect background */}
                 <motion.div
                   animate={{
@@ -120,7 +120,7 @@ const PreLoader = ({ onLoadingComplete }) => {
                     repeat: Infinity,
                     ease: "linear",
                   }}
-                  className="absolute inset-0 w-full h-full"
+                  className="absolute inset-0 h-full w-full"
                   style={{
                     background:
                       "linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%)",
@@ -135,7 +135,7 @@ const PreLoader = ({ onLoadingComplete }) => {
                     duration: 0.3,
                     ease: "easeOut",
                   }}
-                  className="h-full relative overflow-hidden bg-secondary"
+                  className="bg-secondary relative h-full overflow-hidden"
                 >
                   {/* Glossy overlay */}
                   <motion.div
@@ -167,7 +167,7 @@ const PreLoader = ({ onLoadingComplete }) => {
                   key={progress}
                   initial={{ opacity: 1, y: -5 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="font-semibold text-gray-700  font-zalando"
+                  className="font-zalando font-semibold text-gray-700"
                 >
                   {Math.floor(progress)}%
                 </motion.span>
@@ -180,7 +180,7 @@ const PreLoader = ({ onLoadingComplete }) => {
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="text-gray-500 text-xs font-zalando font-semibold"
+                  className="font-zalando text-xs font-semibold text-gray-500"
                 >
                   Loading...
                 </motion.span>
@@ -207,7 +207,7 @@ const PreLoader = ({ onLoadingComplete }) => {
                     delay: i * 0.2,
                     ease: "easeInOut",
                   }}
-                  className="w-2 h-2 bg-secondary rounded-full"
+                  className="bg-secondary h-2 w-2 rounded-full"
                 />
               ))}
             </motion.div>
@@ -224,7 +224,7 @@ const PreLoader = ({ onLoadingComplete }) => {
                   delay: 0.3,
                   ease: [0.43, 0.13, 0.23, 0.96],
                 }}
-                className="absolute top-0 left-0 right-0 h-1/2 bg-secondary origin-top"
+                className="bg-secondary absolute top-0 right-0 left-0 h-1/2 origin-top"
               />
               <motion.div
                 initial={{ scaleY: 0 }}
@@ -234,7 +234,7 @@ const PreLoader = ({ onLoadingComplete }) => {
                   delay: 0.3,
                   ease: [0.43, 0.13, 0.23, 0.96],
                 }}
-                className="absolute bottom-0 left-0 right-0 h-1/2 bg-secondary origin-bottom"
+                className="bg-secondary absolute right-0 bottom-0 left-0 h-1/2 origin-bottom"
               />
             </>
           )}

@@ -2,24 +2,31 @@ import { Link } from "react-router-dom";
 
 import { Github, TwitterIcon } from "lucide-react";
 import { IconBrandDiscord } from "@tabler/icons-react";
-import logo from "@/assets/logo/logo-black.png";
-import React from "react";
+
+import logoBlack from "@/assets/logo/logo-black.png";
+import logoWhite from "@/assets/logo/logo-white.png";
 
 import Container from "@/components/Container";
+import { useTheme } from "@/provider/ThemeProvider";
 
 const Footer = () => {
+  const { isDarkMode } = useTheme();
   return (
     <footer className=" ">
-      <Container className="container flex flex-col gap-10   px-4 pt-8 md:px-0 selection:bg-secondary border-t  border-neutral-400/50 selection:text-white dark:selection:bg-highlight-primary ">
+      <Container className="selection:bg-secondary dark:selection:bg-highlight-primary container flex flex-col gap-10 border-t border-neutral-400/50 px-4 pt-8 selection:text-white md:px-0">
         <div className="flex flex-col gap-10 md:flex-row">
           <div className="flex flex-1 flex-col gap-4">
             <a href="/" className="flex items-center gap-2">
-              <img src={logo} alt="" className="w-[100px]" />
+              {isDarkMode ? (
+                <img src={logoWhite} alt="Logo" className="w-[100px]" />
+              ) : (
+                <img src={logoBlack} alt="Logo" className="w-[100px]" />
+              )}
             </a>
-            <p className=" max-w-sm opacity-70">
-              ArcLine provides high-quality UI components and design solutions
-              for developers and designers building the next generation of
-              AI-powered applications.
+            <p className="max-w-md text-sm text-neutral-400 dark:text-neutral-600">
+              Arcline Softs builds innovative software solutions that boost
+              productivity and simplify development. We help teams focus on
+              creating scalable, high-impact digital products.
             </p>
             <div className="flex gap-4">
               <Link
@@ -28,7 +35,7 @@ const Footer = () => {
                 rel="noreferrer"
                 className="glassmorphic-icon"
               >
-                <TwitterIcon className="h-5 w-5  transition-colors hover:text-foreground" />
+                <TwitterIcon className="hover:text-foreground h-5 w-5 transition-colors" />
                 <span className="sr-only">Twitter</span>
               </Link>
               <Link
@@ -37,7 +44,7 @@ const Footer = () => {
                 rel="noreferrer"
                 className="glassmorphic-icon"
               >
-                <Github className="h-5 w-5  transition-colors hover:text-foreground" />
+                <Github className="hover:text-foreground h-5 w-5 transition-colors" />
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
@@ -46,7 +53,7 @@ const Footer = () => {
                 rel="noreferrer"
                 className="glassmorphic-icon"
               >
-                <IconBrandDiscord className="h-5 w-5  transition-colors hover:text-foreground" />
+                <IconBrandDiscord className="hover:text-foreground h-5 w-5 transition-colors" />
                 <span className="sr-only">Discord</span>
               </Link>
             </div>
@@ -54,11 +61,11 @@ const Footer = () => {
           <div className="grid flex-1 grid-cols-2 gap-10 sm:grid-cols-3">
             <div className="flex flex-col gap-2">
               <h3 className="text-sm font-medium tracking-tight">Product</h3>
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-2 text-neutral-400 dark:text-neutral-600">
                 <li>
                   <Link
                     href="#features"
-                    className="text-sm  transition-colors hover:text-foreground opacity-70"
+                    className="hover:text-foreground text-sm transition-colors"
                   >
                     Features
                   </Link>
@@ -66,7 +73,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="#pricing"
-                    className="text-sm  transition-colors hover:text-foreground opacity-70"
+                    className="hover:text-foreground text-sm transition-colors"
                   >
                     Pricing
                   </Link>
@@ -74,7 +81,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="#components"
-                    className="text-sm  transition-colors hover:text-foreground opacity-70"
+                    className="hover:text-foreground text-sm transition-colors"
                   >
                     Components
                   </Link>
@@ -82,7 +89,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="#changelog"
-                    className="text-sm  transition-colors hover:text-foreground opacity-70"
+                    className="hover:text-foreground text-sm transition-colors"
                   >
                     Changelog
                   </Link>
@@ -95,15 +102,15 @@ const Footer = () => {
                 <li>
                   <Link
                     href="#about"
-                    className="text-sm  transition-colors hover:text-foreground opacity-70"
+                    className="hover:text-foreground text-sm transition-colors"
                   >
                     About
                   </Link>
                 </li>
                 <li>
                   <Link
-                  href="#blog"
-                    className="text-sm  transition-colors hover:text-foreground opacity-70"
+                    href="#blog"
+                    className="hover:text-foreground text-sm transition-colors"
                   >
                     Blog
                   </Link>
@@ -111,7 +118,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="#careers"
-                    className="text-sm  transition-colors hover:text-foreground opacity-70"
+                    className="hover:text-foreground text-sm transition-colors"
                   >
                     Careers
                   </Link>
@@ -119,7 +126,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="#contact"
-                    className="text-sm  transition-colors hover:text-foreground opacity-70"
+                    className="hover:text-foreground text-sm transition-colors"
                   >
                     Contact
                   </Link>
@@ -132,7 +139,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="#privacy"
-                    className="text-sm  transition-colors hover:text-foreground opacity-70"
+                    className="hover:text-foreground text-sm transition-colors"
                   >
                     Privacy
                   </Link>
@@ -140,7 +147,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="#terms"
-                    className="text-sm  transition-colors hover:text-foreground opacity-70"
+                    className="hover:text-foreground text-sm transition-colors"
                   >
                     Terms
                   </Link>
@@ -148,7 +155,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="#cookies"
-                    className="text-sm  transition-colors hover:text-foreground opacity-70"
+                    className="hover:text-foreground text-sm transition-colors"
                   >
                     Cookies
                   </Link>
@@ -156,7 +163,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="#licenses"
-                    className="text-sm  transition-colors hover:text-foreground opacity-70"
+                    className="hover:text-foreground text-sm transition-colors"
                   >
                     Licenses
                   </Link>
@@ -165,20 +172,20 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex justify-between items-center text-xs border-t  border-neutral-400/50  pt-3">
-          <p className=" text-zinc-800">
+        <div className="flex w-full items-center justify-between border-t border-neutral-400/50 pt-3 text-xs">
+          <p className="text-zinc-800">
             © {new Date().getFullYear()} Arcline Softs. All Rights reserved.
           </p>
-          <div className="flex gap-5  text-zinc-800">
+          <div className="flex gap-5 text-zinc-800">
             <a
               href=""
-              className="hover:text-zinc-800 text-zinc-600 duration-150 ease-in-ou "
+              className="ease-in-ou text-zinc-600 duration-150 hover:text-zinc-800"
             >
               Terms
             </a>
             <a
               href=""
-              className="hover:text-zinc-800 text-zinc-600 duration-150 ease-in-out "
+              className="text-zinc-600 duration-150 ease-in-out hover:text-zinc-800"
             >
               Privacy
             </a>
