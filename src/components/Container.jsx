@@ -5,7 +5,7 @@ const Container = ({ children, className }) => {
   return (
     <section
       className={cn(
-        `selection:bg-secondary dark:selection:bg-primary mx-auto max-w-7xl py-6 selection:text-white dark:selection:text-zinc-800`,
+        `selection:bg-secondary mx-auto max-w-7xl py-6 selection:text-white dark:selection:text-zinc-800`,
         className,
       )}
     >
