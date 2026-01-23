@@ -81,7 +81,7 @@ export default function FAQSection() {
               return (
                 <div
                   key={index}
-                  className="w-full overflow-hidden border-b border-[rgba(73,66,61,0.16)]"
+                  className="w-full overflow-hidden border-b border-neutral-400/50 dark:border-neutral-600/50"
                 >
                   <button
                     onClick={() => toggleItem(index)}
@@ -105,7 +105,7 @@ export default function FAQSection() {
                       isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                     }`}
                   >
-                    <div className="px-5 pb-[18px] text-sm leading-6 font-normal text-neutral-600">
+                    <div className="px-5 pb-[18px] text-sm leading-6 font-normal text-neutral-600 dark:text-neutral-400">
                       {item.answer}
                     </div>
                   </div>
