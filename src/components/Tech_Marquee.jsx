@@ -39,7 +39,7 @@ const Tech_Marquee = () => {
               {skills.map((skill, index) => (
                 <div
                   key={`first-${index}`}
-                  className="mx-3 flex w-max items-center justify-center gap-2 rounded-full bg-white px-6 py-2 text-sm text-zinc-800 shadow-lg"
+                  className="mx-3 flex w-max items-center justify-center gap-2 rounded-full bg-white px-6 py-2 text-sm text-zinc-800 shadow-lg dark:bg-zinc-800 dark:text-white"
                 >
                   <img src={skill.icon} alt={skill.name} className="h-5" />
                   {skill.name}
@@ -50,7 +50,7 @@ const Tech_Marquee = () => {
               {skills.map((skill, index) => (
                 <div
                   key={`second-${index}`}
-                  className="mx-3 flex w-max items-center justify-center gap-2 rounded-full bg-white px-6 py-2 text-sm text-zinc-800 shadow-lg"
+                  className="mx-3 flex w-max items-center justify-center gap-2 rounded-full bg-white px-6 py-2 text-sm text-zinc-800 shadow-lg dark:bg-zinc-800 dark:text-white"
                 >
                   <img src={skill.icon} alt={skill.name} className="h-5" />
                   {skill.name}
@@ -65,7 +65,7 @@ const Tech_Marquee = () => {
               {skills.map((skill, index) => (
                 <div
                   key={`first-${index}`}
-                  className="mx-3 flex w-max items-center justify-center gap-2 rounded-full bg-white px-6 py-2 text-sm text-zinc-800 shadow-lg"
+                  className="mx-3 flex w-max items-center justify-center gap-2 rounded-full bg-white px-6 py-2 text-sm text-zinc-800 shadow-lg dark:bg-zinc-800 dark:text-white"
                 >
                   <img src={skill.icon} alt={skill.name} className="h-5" />
                   {skill.name}
@@ -76,7 +76,7 @@ const Tech_Marquee = () => {
               {skills.map((skill, index) => (
                 <div
                   key={`second-${index}`}
-                  className="mx-3 flex w-max items-center justify-center gap-2 rounded-full bg-white px-6 py-2 text-sm text-zinc-800 shadow-lg"
+                  className="mx-3 flex w-max items-center justify-center gap-2 rounded-full bg-white px-6 py-2 text-sm text-zinc-800 shadow-lg dark:bg-zinc-800 dark:text-white"
                 >
                   <img src={skill.icon} alt={skill.name} className="h-5" />
                   {skill.name}

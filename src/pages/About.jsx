@@ -7,6 +7,7 @@ import GetStartedBtn from "@/components/ui/GetStartedBtn";
 import HeroBgPattern from "@/components/ui/HeroBgPattern";
 
 import TextBottomBeam from "@/components/ui/TextBottomBeam";
+import { cn } from "@/lib/utils";
 import { CircleCheckBig } from "lucide-react";
 
 export const metadata = {
@@ -111,7 +112,8 @@ export default function AboutPage() {
           </section>
 
           {/* Core Values Section */}
-          <section className="py-16 md:py-24">
+          <section className="py-16 md:py-24 ">
+   
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="mx-auto">
                 <div className="mb-12 text-center md:mb-16">
