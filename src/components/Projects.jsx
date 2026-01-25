@@ -43,7 +43,8 @@ const Projects = () => {
                 translateZ="30"
                 className="mt-2 max-w-sm text-sm text-neutral-500 dark:text-neutral-300"
               >
-             Triton Sportsline empowers athletes through sports education, professional training, events, and partnerships nationwid
+                Triton Sportsline empowers athletes through sports education,
+                professional training, events, and partnerships nationwid
               </CardItem>
               <div className="mt-6 flex items-center justify-between">
                 <CardItem
@@ -51,16 +52,16 @@ const Projects = () => {
                   as="a"
                   href="https://www.tritonsportsline.in/"
                   target="__blank"
-                  className="rounded-xl border px-4 py-2 text-xs font-normal dark:text-white cursor-pointer"
+                   className="border-border cursor-pointer rounded-xl border px-4 py-2 text-xs font-normal text-black dark:text-white dark:border-border dark:bg-zinc-900"
                 >
                   Visit Site →
                 </CardItem>
                 <CardItem
                   translateZ={20}
                   as="button"
-                  className="dark:bg-background rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:text-black cursor-pointer"
+                className="cursor-pointer rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black "
                 >
-                View
+                  View
                 </CardItem>
               </div>
             </CardBody>
@@ -85,7 +86,8 @@ const Projects = () => {
                 translateZ="30"
                 className="mt-2 max-w-sm text-sm text-neutral-500 dark:text-neutral-300"
               >
-                FinuSmart delivers tailored insurance and assistance solutions for fintech, ecommerce, travel, health sectors.
+                FinuSmart delivers tailored insurance and assistance solutions
+                for fintech, ecommerce, travel, health sectors.
               </CardItem>
               <div className="mt-6 flex items-center justify-between">
                 <CardItem
@@ -93,16 +95,16 @@ const Projects = () => {
                   as="a"
                   href="https://www.finusmart.com/"
                   target="__blank"
-                  className="rounded-xl border px-4 py-2 text-xs font-normal dark:text-white cursor-pointer"
+                className="border-border cursor-pointer rounded-xl border px-4 py-2 text-xs font-normal text-black dark:text-white dark:border-border dark:bg-zinc-900"
                 >
                   Visit Site →
                 </CardItem>
                 <CardItem
                   translateZ={20}
                   as="button"
-                  className="dark:bg-background rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:text-black cursor-pointer"
+                     className="cursor-pointer rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black "
                 >
-                View
+                  View
                 </CardItem>
               </div>
             </CardBody>
@@ -127,7 +129,8 @@ const Projects = () => {
                 translateZ="30"
                 className="mt-2 max-w-sm text-sm text-neutral-500 dark:text-neutral-300"
               >
-            BeatWave is an online marketplace for discovering, licensing, and purchasing high-quality music beats.
+                BeatWave is an online marketplace for discovering, licensing,
+                and purchasing high-quality music beats.
               </CardItem>
               <div className="mt-6 flex items-center justify-between">
                 <CardItem
@@ -135,14 +138,14 @@ const Projects = () => {
                   as="a"
                   href="https://beat-wave-pink.vercel.app/"
                   target="__blank"
-                  className="cursor-pointer rounded-xl border border-border px-4 py-2 text-xs font-normal text-black dark:text-white"
+                  className="border-border cursor-pointer rounded-xl border px-4 py-2 text-xs font-normal text-black dark:text-white dark:border-border dark:bg-zinc-900"
                 >
                   Visit Site →
                 </CardItem>
                 <CardItem
                   translateZ={20}
                   as="button"
-                  className="dark:bg-background cursor-pointer rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:text-black"
+                  className="cursor-pointer rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black "
                 >
                   View
                 </CardItem>
