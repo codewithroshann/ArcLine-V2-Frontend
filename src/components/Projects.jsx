@@ -24,7 +24,7 @@ const Projects = () => {
         </div>
         <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <CardContainer className="inter-var">
-            <CardBody className="group/card relative h-auto w-auto rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]">
+            <CardBody className="group/card dark:bg-card relative h-auto w-auto rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]">
               <CardItem translateZ="100" className="w-full">
                 <img
                   src="/projects/tritonsportsline.png"
@@ -52,14 +52,14 @@ const Projects = () => {
                   as="a"
                   href="https://www.tritonsportsline.in/"
                   target="__blank"
-                   className="border-border cursor-pointer rounded-xl border px-4 py-2 text-xs font-normal text-black dark:text-white dark:border-border dark:bg-zinc-900"
+                  className="border-border dark:border-border cursor-pointer rounded-xl border px-4 py-2 text-xs font-normal text-black dark:bg-zinc-900 dark:text-white"
                 >
                   Visit Site →
                 </CardItem>
                 <CardItem
                   translateZ={20}
                   as="button"
-                className="cursor-pointer rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black "
+                  className="cursor-pointer rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black"
                 >
                   View
                 </CardItem>
@@ -67,7 +67,7 @@ const Projects = () => {
             </CardBody>
           </CardContainer>
           <CardContainer className="inter-var">
-            <CardBody className="group/card relative h-auto w-auto rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]">
+            <CardBody className="group/card relative h-auto w-auto rounded-xl border border-black/[0.1] p-6 dark:border-white/[0.2]  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]">
               <CardItem translateZ="100" className="w-full">
                 <img
                   src="/projects/finusmart-fintech.png"
@@ -95,14 +95,14 @@ const Projects = () => {
                   as="a"
                   href="https://www.finusmart.com/"
                   target="__blank"
-                className="border-border cursor-pointer rounded-xl border px-4 py-2 text-xs font-normal text-black dark:text-white dark:border-border dark:bg-zinc-900"
+                  className="border-border dark:border-border cursor-pointer rounded-xl border px-4 py-2 text-xs font-normal text-black dark:bg-zinc-900 dark:text-white"
                 >
                   Visit Site →
                 </CardItem>
                 <CardItem
                   translateZ={20}
                   as="button"
-                     className="cursor-pointer rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black "
+                  className="cursor-pointer rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black"
                 >
                   View
                 </CardItem>
@@ -110,7 +110,7 @@ const Projects = () => {
             </CardBody>
           </CardContainer>
           <CardContainer className="inter-var">
-            <CardBody className="group/card relative h-auto w-auto rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]">
+            <CardBody className="group/card relative h-auto w-auto rounded-xl border border-black/[0.1]  p-6 dark:border-white/[0.2] dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]">
               <CardItem translateZ="100" className="w-full">
                 <img
                   src="/projects/beatwave.png"
@@ -138,14 +138,14 @@ const Projects = () => {
                   as="a"
                   href="https://beat-wave-pink.vercel.app/"
                   target="__blank"
-                  className="border-border cursor-pointer rounded-xl border px-4 py-2 text-xs font-normal text-black dark:text-white dark:border-border dark:bg-zinc-900"
+                  className="border-border dark:border-border cursor-pointer rounded-xl border px-4 py-2 text-xs font-normal text-black dark:bg-zinc-900 dark:text-white"
                 >
                   Visit Site →
                 </CardItem>
                 <CardItem
                   translateZ={20}
                   as="button"
-                  className="cursor-pointer rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black "
+                  className="cursor-pointer rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black"
                 >
                   View
                 </CardItem>

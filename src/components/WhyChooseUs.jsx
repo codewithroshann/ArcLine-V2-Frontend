@@ -1047,7 +1047,7 @@ const StickyCard = ({
   return (
     <div
       ref={container}
-      className="sticky top-0 mx-auto flex w-full max-w-5xl items-center justify-center px-8"
+      className="sticky top-[22vh] mx-auto flex w-full max-w-5xl items-center justify-center px-8"
     >
       <motion.div
         style={{
@@ -1109,7 +1109,7 @@ const WhyChooseUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="mt-8 flex flex-col items-center justify-center space-y-4 text-center"
+            className="sticky top-[14vh] mt-8 flex flex-col items-center justify-center space-y-4 text-center"
           >
             <span className="text-secondary font-zalando font-normal uppercase">
               {" "}
