@@ -66,12 +66,12 @@ const Projects = () => {
               </div>
             </CardBody>
           </CardContainer>
-          <CardContainer className="inter-var">
+          <CardContainer className="inter-var">                            
             <CardBody className="group/card relative h-auto w-auto rounded-xl border border-black/[0.1] p-6 dark:border-white/[0.2]  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]">
               <CardItem translateZ="100" className="w-full">
                 <img
                   src="/projects/finusmart-fintech.png"
-                  className="h-60 w-full rounded-xl border border-neutral-400/40 object-cover shadow-lg group-hover/card:shadow-xl"
+                  className="h-60 w-full rounded-xl border border-neutral-400/40 object-cover  group-hover/card:shadow-xl"
                   alt="thumbnail"
                 />
               </CardItem>
